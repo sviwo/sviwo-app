@@ -1,0 +1,26 @@
+server:
+  address:     ":8000"
+  openapiPath: "/api.json"
+  swaggerPath: "/swagger"
+
+logger:
+  level : "all"
+  stdout: true
+
+database:
+  default:
+    - link: "mysql:root:1qaz2wsx@tcp(127.0.0.1:3306)/sviwo" #数据库url配置
+      role: "master"
+
+redis:
+  default:
+    address: 127.0.0.1:6379 #redis地址
+    db:      1 #db
+    pass: 123456 #密码
+  cache:
+    address:     127.0.0.1:6379  #地址
+    db:          1   #db
+    pass: 123456  #密码
+
+
+
