@@ -9,18 +9,18 @@ logger:
 
 database:
   default:
-    - link: "mysql:root:1qaz2wsx@tcp(127.0.0.1:3306)/sviwo" #数据库url配置
+    - link: "mysql:root:gyc1993@tcp(114.115.135.233:3306)/sviwo" #数据库url配置
       role: "master"
 
 redis:
   default:
-    address: 127.0.0.1:6379 #redis地址
+    address: 127.0.0.1:7001 #redis地址
     db:      1 #db
-    pass: 123456 #密码
+    pass: #密码
   cache:
-    address:     127.0.0.1:6379  #地址
-    db:          1   #db
-    pass: 123456  #密码
+    address: 127.0.0.1:7001  #地址
+    db: 1   #db
+    pass:  #密码
 
 
 
